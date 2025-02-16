@@ -54,6 +54,33 @@ This project follows a structured development workflow with specific branching a
 
 3. Push changes and merge when complete
 
+### Setting Up in a New Project
+
+When copying these files to a new or existing project:
+
+1. Copy the required files:
+   ```bash
+   cp setup-git-workflow.sh /path/to/your/project/
+   cp git-workflow.md /path/to/your/project/
+   ```
+
+2. Make the setup script executable:
+   ```bash
+   chmod +x setup-git-workflow.sh
+   ```
+
+3. Run the setup script:
+   ```bash
+   ./setup-git-workflow.sh
+   ```
+
+The setup script will:
+- Initialize git if needed
+- Configure your git user information
+- Update package.json repository URLs
+- Set up commit message validation
+- Configure pre-commit hooks for linting and formatting
+
 ## License
 
 Apache-2.0
